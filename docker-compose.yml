@@ -1,0 +1,32 @@
+version: '3.4'
+
+services:
+  account.api:
+    image: ${DOCKER_REGISTRY-}accountapi
+    build:
+      context: .
+      dockerfile: src/Account.Api/Dockerfile
+    ports:
+      - "8081:80"
+      - "8082:443"
+    depends_on:
+      - account.db      
+    networks:
+      - account
+      - shared
+
+  account.db:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    environment:
+      - SA_PASSWORD=DockerSql2017!
+      - ACCEPT_EULA=Y
+    ports:
+      - "5434:1433"
+    networks:
+      - account
+
+networks:
+  shared:
+    driver: bridge
+  account:
+    driver: bridge
