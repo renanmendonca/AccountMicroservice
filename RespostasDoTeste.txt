@@ -3,7 +3,7 @@ NA ESTRATÉGIA DE DESENVOLVIMENTO DE SOFTWARE.
 
 Basicamente o DDD é um padrão de desenvolvimento e seu grande pilar é o alinhamento 
 da linguagem de negócio e o código (linguagem ubiqua) e a delimitação de contexto, estabelecendo 
-limites para o domínio de um problema, assim favorecendo a resolução de ploblemas complexos, 
+limites para o domínio de um problema, assim favorecendo a resolução de problemas complexos, 
 reaproveitamento de código e um menor acoplamento.
 
 
@@ -20,13 +20,7 @@ e o aumento da complexidade de gestão.
 3) EXPLIQUE QUAL A DIFERENÇA ENTRE COMUNICAÇÃO SINCRONA E ASSINCRONA E QUAL O
 MELHOR CENÁRIO PARA UTILIZAR UMA OU OUTRA.
 
-A comunição sincrona aguarda uma resposta para prosseguir, ao contrário
+A comunicação sincrona aguarda uma resposta para prosseguir, ao contrário
 a assincrona que libera o processo sem precisar resposta de uma requisição.
 Em um cenário de microserviços utiliza-se muito a comunicação assincrona via 
 messages brokers, quando não há necessidade de esperar uma resposta.
-
-
-
-
-
-
