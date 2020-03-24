@@ -1,0 +1,32 @@
+1) EXPLIQUE COM SUAS PALAVRAS O QUE É DOMAIN DRIVEN DESIGN E SUA IMPORTÂNCIA
+NA ESTRATÉGIA DE DESENVOLVIMENTO DE SOFTWARE.
+
+Basicamente o DDD é um padrão de desenvolvimento e seu grande pilar é o alinhamento 
+da linguagem de negócio e o código (linguagem ubiqua) e a delimitação de contexto, estabelecendo 
+limites para o domínio de um problema, assim favorecendo a resolução de ploblemas complexos, 
+reaproveitamento de código e um menor acoplamento.
+
+
+2) EXPLIQUE COM SUAS PALAVRAS O QUE É E COMO FUNCIONA UMA ARQUITETURA BASEADA
+EM MICROSERVICES. EXPLIQUE GANHOS COM ESTE MODELO E DESAFIOS EM SUA
+IMPLEMENTAÇÃO.
+
+São aplicações com um conjunto regras de negócio que funcionam de forma independente,
+que assim facilitam a manutenção, escalabilidade e deploy.
+Os principais desafios neste tipo de cenário podem ser a comunicação entre os serviços
+e o aumento da complexidade de gestão.
+
+
+3) EXPLIQUE QUAL A DIFERENÇA ENTRE COMUNICAÇÃO SINCRONA E ASSINCRONA E QUAL O
+MELHOR CENÁRIO PARA UTILIZAR UMA OU OUTRA.
+
+A comunição sincrona aguarda uma resposta para prosseguir, ao contrário
+a assincrona que libera o processo sem precisar resposta de uma requisição.
+Em um cenário de microserviços utiliza-se muito a comunicação assincrona via 
+messages brokers, quando não há necessidade de esperar uma resposta.
+
+
+
+
+
+
